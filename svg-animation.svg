@@ -1,0 +1,37 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="4in" height="4in" 
+     viewBox="0 0 400 400"
+     preserveAspectRatio="xMidYMid">
+    
+    
+    <defs>
+        
+        <rect id="sunray" x="0" y="0" height="5" width="90" fill="yellow" />
+        <g id="sun">
+            <circle cx="0" cy="0" r="30" stroke="yellow" fill="yellow" transform="translate(45,2.5)"/>
+            <use xlink:href="#sunray"/>
+            <use xlink:href="#sunray" transform="rotate(90,45,2.5)"/>
+            <use xlink:href="#sunray" transform="rotate(45,45,2.5)"/>
+            <use xlink:href="#sunray" transform="rotate(135,45,2.5)"/>
+        </g>
+        
+        <g id="tree">
+            <rect x="15" y="80" height="20" width="10" fill="brown" stroke="brown"/>
+            <polygon points="20,0 0,80 40,80" fill="darkgreen"/>
+        </g>
+    </defs>
+    
+    <rect x="0" y="0" height="400" width="400" fill="skyblue" />
+    <rect x="0" y="300" height="100" width="400" fill="green" />
+    <circle cx="0" cy="0" r="40" fill="aqua" transform="translate(180,330) scale(1.5,.25)"/>
+    
+    <use xlink:href="#sun">
+        <animateMotion path="M -100,125 C 100,10 200,10 400,125" dur="7s" repeatCount="indefinite" />
+    </use>
+    
+    
+    <use xlink:href="#tree" transform="translate(240,205)"/>
+    
+    <rect x="0" y="0" height="400" width="400" fill="none" stroke="black"/>
+</svg>
